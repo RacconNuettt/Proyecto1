@@ -51,11 +51,6 @@ header {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-a:hover {
-    border-top: 1px solid black;
-}
-
 .drop {
     display: none;
     position: absolute;
@@ -64,6 +59,22 @@ a:hover {
     padding: 10px;
     width: 150px;
     z-index: 1;
+}
+
+.drop ul li ul li{
+    list-style-type: none;
+}
+.drop li ul::before {
+    content: "";
+    position: absolute;
+    border-color: #212529;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px 5px;
+    height: 2px;
+    left: -17px;
+    margin-top: 10px;
+
 }
 
 .nav li:hover .drop {
@@ -96,7 +107,7 @@ a:hover {
     width: 100px !important;
 }
 
-.nav-map{
+.nav-map {
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -109,17 +120,17 @@ a:hover {
     width: 100%;
 }
 
-.slideshow-container{
-    max-width: 1000px;
+.slideshow-container {
     position: relative;
     margin: auto;
 }
 
-.mySlides{
+.mySlides {
     display: none;
 }
 
-.prev, .next{
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -133,30 +144,33 @@ a:hover {
     user-select: none;
 }
 
-.next{
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover{
+.prev:hover {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.next:hover{
+.next:hover {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.text{
-    color: #f2f2f2;
-    font-size: 15px;
+.text {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(61, 59, 59, 0.810259) 50%, rgba(255, 255, 255, 0) 100%);
+    color: #ffffff;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    bottom: 90px;
     width: 100%;
     text-align: center;
 }
 
-.numbertext{
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
@@ -164,27 +178,84 @@ a:hover {
     top: 0;
 }
 
-.dot{
+.dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
+    height: 8px;
+    width: 8px;
+    margin: 0 0px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover{
+.active,
+.dot:hover {
     background-color: #717171;
 }
 
-.fade{
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
 
-@keyframes fade{
-    from{opacity: .4}
-    to{opacity: 1;}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1;
+    }
 }
+
+
+
+.wrapper-box-shadow .gen-title-ICE-breakline {
+    display: flex;
+    justify-content: center;
+    color: #004b93;
+}
+.col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.wrapper-box-shadow .gen-title-ICE-breakline .yellow-breakline {
+    height: 3px;
+    width: 341px;
+    background: linear-gradient(90deg, #ffffff, #e9c60c, #ffffff);
+}
+
+
+
+/* .wrapper-nuestros-negocios .ParallaxVideo {
+    height: 444px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.wrapper-nuestros-negocios .ParallaxVideo .parallax-cont #imgParallaxIOS {
+    display: none;
+}
+.wrapper-nuestros-negocios .ParallaxVideo .parallax-cont #imgParallaxIOS img {
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -999;
+    height: auto;
+}
+.wrapper-nuestros-negocios .ParallaxVideo .parallax-cont video {
+    width: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -999;
+    height: 100%;
+    height: auto;
+}
+.d-none {
+    display: none !important;
+} */
