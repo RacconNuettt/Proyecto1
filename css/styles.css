@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 #tema {
@@ -51,19 +52,26 @@ header {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+nav li a:hover {
+    border-top: #212529 0.8px solid;
+}
+
 .drop {
     display: none;
     position: absolute;
     background-color: #73707093;
     list-style-type: none;
+    text-decoration: none;
     padding: 10px;
     width: 150px;
     z-index: 1;
 }
 
-.drop ul li ul li{
+.drop ul li ul li {
     list-style-type: none;
 }
+
 .drop li ul::before {
     content: "";
     position: absolute;
@@ -209,23 +217,196 @@ header {
     }
 }
 
+.financial-report {
+    display: block;
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.financial-report h1 {
+    color: #004b93;
+    font-size: 46px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
 
-.wrapper-box-shadow .gen-title-ICE-breakline {
+.horizontal-line {
+    width: 350px;
+    height: 1.8px;
+    background: linear-gradient(90deg, #ffffff, #e9c60c, #ffffff);
+    margin: 10px auto 30px auto;
+    margin-bottom: 100px;
+}
+
+.report-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.report-image img {
+    width: 472px;
+    height: 314px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.vertical-line {
+    width: 1.8px;
+    height: 300px;
+    background: linear-gradient(90deg, #ffffff, #e9c60c, #ffffff);
+    text-decoration: none;
+}
+
+.report-info {
+    max-width: 500px;
+    text-align: left;
+}
+
+.report-info h2 {
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.report-info p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.report-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.report-link:hover {
+    background-color: #ffc700;
+}
+
+.ctn-card {
+    background-color: #ffffff;
+    padding-bottom: 40px;
+}
+
+@media (min-width: 1200px) {
+
+    .ctn-back {
+    max-width: 1140px;
+    }
+}
+
+.ctn-back {
+    background-image: url(../img/backgroundServPrinc.png);
+    background-size: 100% 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.row {
+    display: grid;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.ctn-card .title-back {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
     color: #004b93;
 }
-.col-12 {
-    -ms-flex: 0 0 100%;
+
+.ctn-img {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.cf3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+cf {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.cf3 a {
+    color: #004b93;
+}
+
+.cnt2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 236px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 40px 0 rgba(172, 172, 172, 0.5);
+}
+
+.ctn2:hover {
+    border: 1.5px solid #004b93;
+}
+
+.ctn2 img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.columns1 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.columns2 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.columns2 {
     flex: 0 0 100%;
     max-width: 100%;
 }
-.wrapper-box-shadow .gen-title-ICE-breakline .yellow-breakline {
-    height: 3px;
-    width: 341px;
-    background: linear-gradient(90deg, #ffffff, #e9c60c, #ffffff);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -256,6 +437,7 @@ header {
     height: 100%;
     height: auto;
 }
+
 .d-none {
     display: none !important;
 } */
