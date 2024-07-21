@@ -136,6 +136,7 @@ header {
     margin-bottom: 100px;
 }
 
+
 .containerp h1 {
     color: #004b93;
     font-size: 46px;
@@ -149,7 +150,7 @@ header {
 }
 
 .flecha {
-    background-image: url(/Proyecto1/img/right-arrow.png);
+    background-image: url(../img/right-arrow.png);
     background-repeat: no-repeat;
     display: inline-block;
     height: 11px;
@@ -158,7 +159,7 @@ header {
     vertical-align: text-bottom;
 }
 
-#link{
+#link {
     color: #212529;
     text-decoration: none;
 }
@@ -171,6 +172,7 @@ header {
 
 #link:hover {
     color: #004992 !important;
+    text-decoration: underline;
 }
 
 
@@ -256,28 +258,27 @@ ctn-nav {
 }
 
 .facebook {
-    background-image: url(/Proyecto1/svg/facebook.svg);
+    background-image: url(../svg/facebook.svg);
 }
 
 .twitter {
-    background-image: url(/Proyecto1/svg/Twitter.svg);
+    background-image: url(../svg/Twitter.svg);
 
 }
 
 .whatsapp {
-    background-image: url(/Proyecto1/svg/whatsapp.svg);
+    background-image: url(../svg/whatsapp.svg);
 }
 
 .correo {
-    background-image: url(/Proyecto1/svg/correo.svg);
+    background-image: url(../svg/correo.svg);
 }
 
 .imprimir {
-    background-image: url(/Proyecto1/svg/print.svg);
+    background-image: url(../svg/print.svg);
 }
 
 .information-container {
-    display: block;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -287,7 +288,7 @@ ctn-nav {
     max-width: 1100px;
 }
 
-.letme h1{
+.letme h1 {
     font-size: 2rem;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
@@ -303,3 +304,78 @@ ctn-nav {
     color: #000000d5;
     font-weight: 300;
 }
+
+.footer {
+    background-color: #555;
+    color: white;
+    padding: 10px;
+}
+
+.footer-top, .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info, .footer-social, .footer-language, .footer-links, .footer-ipv6, .footer-translate {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.footer-info p, .footer-links p, .footer-translate p, .footer-language select {
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-style: none;
+    font-size: 14px;
+}
+
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover, .footer-translate a:hover, .footer-social a:hover {
+    text-decoration: underline;
+}
+
+#language {
+    padding: 5px;
+
+}
+
+.footer-divider {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+.footer-ipv6 img {
+    max-height: 20px;
+}
+
+.footer-translate a{
+    color: black;
+    font-size: 13px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+

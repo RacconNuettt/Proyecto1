@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+ /*    border: dashed 1px; */
 }
 
 #tema {
@@ -52,6 +54,7 @@ header {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .drop {
     display: none;
     position: absolute;
@@ -63,9 +66,10 @@ header {
     z-index: 1;
 }
 
-.drop ul li ul li{
+.drop ul li ul li {
     list-style-type: none;
 }
+
 .drop li ul::before {
     content: "";
     position: absolute;
@@ -120,4 +124,319 @@ header {
 
 .nav-map img {
     width: 100%;
+}
+
+.flecha {
+    background-image: url(../img/right-arrow.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 11px;
+    background-size: 75%;
+    width: 15px;
+    vertical-align: text-bottom;
+}
+
+#link {
+    color: #212529;
+    text-decoration: none;
+}
+
+#txt {
+    padding: 5px;
+    font-size: 11px !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#link:hover {
+    color: #004992 !important;
+    text-decoration: underline;
+}
+
+
+.contenedoDemininav {
+    padding: 12px 16px;
+}
+
+
+.wrapper-banner {
+    height: 525px;
+}
+
+.wrapper-banner .banner {
+    background: linear-gradient(277.29deg, #003E7A 0%, #004B93 106.04%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 332px;
+}
+
+.wrapper-banner .banner h1 {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 48px;
+    padding: 56px 0;
+    margin: 0;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.wrapper .banner img {
+    border-radius: 200px;
+    width: 912px;
+    height: 332px;
+}
+
+#hdp {
+    border-radius: 10px;
+}
+
+.date {
+    display: inline-flex;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 17px;
+    margin-left: 300px;
+}
+
+.share {
+    display: inline-block;
+
+}
+
+.dtsh-in {
+    display: grid;
+    grid-template-columns:auto auto;
+}
+
+.share a {
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    font-size: 24px;
+    opacity: 0.75;
+    transition: opacity 0.15s linear;
+}
+
+.hide {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.facebook {
+    background-image: url(../svg/facebook.svg);
+}
+
+.twitter {
+    background-image: url(../svg/Twitter.svg);
+
+}
+
+.whatsapp {
+    background-image: url(../svg/whatsapp.svg);
+}
+
+.correo {
+    background-image: url(../svg/correo.svg);
+}
+
+.imprimir {
+    background-image: url(../svg/print.svg);
+}
+
+.information-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    max-width: 1100px;
+}
+
+.information-container h2 {
+    font-size: 2rem;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000d5;
+    font-weight: 300;
+}
+
+.information-container ul li {
+    list-style: square;
+    position: relative;
+    margin-left: 80px;
+}
+
+.information-container p {
+    font-size: 16px !important;
+    text-align: justify;
+    letter-spacing: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000d5;
+    font-weight: 300;
+}
+
+.fnt h2{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+formfont b{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ftm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin-left: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.container-form{
+    padding: 16px;
+    justify-content: center;
+    display: block;
+    text-align: center;
+}
+
+input[type=text],
+input[type=password]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.sendbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border-radius: 1px solid;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+    border-radius: 8px;
+}
+
+.sendbtn:hover {
+    opacity: 1;
+}
+
+a {
+    color: dodgerblue;
+}
+
+.cancelbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border-radius: 1px solid;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+    border-radius: 8px;
+}
+
+.footer {
+    background-color: #555;
+    color: white;
+    padding: 10px;
+}
+
+.footer-top, .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info, .footer-social, .footer-language, .footer-links, .footer-ipv6, .footer-translate {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.footer-info p, .footer-links p, .footer-translate p, .footer-language select {
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-style: none;
+    font-size: 14px;
+}
+
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover, .footer-translate a:hover, .footer-social a:hover {
+    text-decoration: underline;
+}
+
+#language {
+    padding: 5px;
+
+}
+
+.footer-divider {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+.footer-ipv6 img {
+    max-height: 20px;
+}
+
+.footer-translate a{
+    color: black;
+    font-size: 13px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
